@@ -36,6 +36,18 @@ Two skills any agent can call:
 - **Draft a Post** (`draft-a-post`). Turn a rough idea into a short post in
   your voice, ready to refine.
 
+And one routine, on Bea:
+
+- **Tidy yesterday's notes**, every day at 08:00. Runs Clean a Note over
+  anything you captured yesterday that is still messy, and stops without
+  changing anything if there is nothing to tidy.
+
+It arrives switched on, so installing this team means one scheduled job starts
+running on your machine. Rundock says so on the install card before you agree,
+and you can turn it off or delete it from Routines afterwards. Note that the
+routine is a Rundock idea: the same agent file works in plain Claude Code,
+where the routine simply never runs.
+
 The shape is deliberate. Cos exists so you brief one agent, not three. Cleo is
 the one that makes. Bea is the one that buys back your time: most of the hours
 you lose go to admin, not creation, so point your worst weekly time sink at
@@ -45,7 +57,7 @@ no matter what else you change.
 ## Install into Rundock
 
 Paste this repository's link into **Settings, Packages** in Rundock. Rundock
-finds the three agents and two skills and offers to add them to your
+finds the three agents, two skills and one routine, and offers to add them to
 workspace. Nothing installs until you say yes. Once added, they are your
 files: edit them like anything else in your workspace.
 
