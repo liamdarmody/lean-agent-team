@@ -57,7 +57,7 @@ no matter what else you change.
 ## Install into Rundock
 
 Paste this repository's link into **Settings, Packages** in Rundock. Rundock
-finds the three agents, two skills and one routine, and offers to add them to
+finds the three agents, two skills and one routine, and offers to add them to your
 workspace. Nothing installs until you say yes. Once added, they are your
 files: edit them like anything else in your workspace.
 
