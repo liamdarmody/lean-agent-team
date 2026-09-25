@@ -1,6 +1,6 @@
 # The Lean Agent Team
 
-A few AI agents that know your business. Three agents, two skills, and the
+A few AI agents that know your business. Three agents, three skills, and the
 operating rules that tie them together. Open the folder and you have a working
 team in about ten minutes.
 
@@ -29,12 +29,16 @@ Three agents, one job each, and an orchestrator on top.
   emails, and pages in your voice. Carries coach, consultant, and agency
   presets; you keep one.
 
-Two skills any agent can call:
+Three skills any agent can call:
 
 - **Clean a Note** (`clean-a-note`). Turn meeting scrawl, a transcript, or a
   brain dump into decisions, actions, and follow-ups.
 - **Draft a Post** (`draft-a-post`). Turn a rough idea into a short post in
   your voice, ready to refine.
+- **Set Up Your Context** (`set-up-your-context`). Checks the three context
+  files the team reads and, for any that are missing or still a template,
+  interviews you and writes them. It shows you each file before saving and
+  never overwrites one you have filled without asking.
 
 And one routine, on Bea:
 
@@ -76,7 +80,7 @@ The team beside what you already run in Rundock.
 
 1. In Rundock, open **Settings, Packages**.
 2. Paste this repository's link into **Add a package**.
-3. Rundock finds the three agents, two skills and one routine, and shows you
+3. Rundock finds the three agents, three skills and one routine, and shows you
    what it would add. Nothing installs until you say yes.
 
 If your workspace already has something at the same name, such as your own
@@ -86,9 +90,11 @@ another name, it offers to put the team under yours rather than add a second
 lead. Once added, the agents and skills are your files: edit them like
 anything else in your workspace.
 
-This route brings the agents, the skills and the routine. `CLAUDE.md`,
-`context/` and `prompts/` stay here: copy them in by hand if you want the
-first-run interview and the context files the agents read first.
+This route brings the agents, the skills and the routine. The context files the
+agents read (`context/company.md`, `person.md` and `voice.md`) are not copied
+in: the first time you talk to the team, it notices they are missing and offers
+to set them up with a short interview. `CLAUDE.md` and `prompts/` stay here; copy
+them in by hand if you want the full workspace setup.
 
 Pasting the link installs the latest release. When a new release is tagged,
 Rundock offers it from the team's card on the Packages page, and it keeps
@@ -102,7 +108,7 @@ anything you have edited.
   sessions, so this makes them load your context every time instead of
   guessing from a blank slate.
 - **.claude/agents/:** the three agents above.
-- **.claude/skills/:** the two skills above, one folder each.
+- **.claude/skills/:** the three skills above, one folder each.
 - **context/:** `company.md`, `person.md`, and `voice.md`, the files the
   make-it-yours prompt fills in. The prompt can also add a `people/` file for
   a key client or teammate on demand, so nothing empty ships.
