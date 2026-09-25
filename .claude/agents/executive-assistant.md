@@ -16,6 +16,10 @@ routines:
     prompt: Look for notes captured yesterday that are still messy, and clean each one using the Clean a Note skill. If there are none, say so and stop without changing anything.
     description: Runs Clean a Note over yesterday's captures, so scrawl does not accumulate through the week.
     enabled: true
+    runOn: local
+    paused: false
+    planHash: ae0c2a370f126c0728352cce2fee6c7e4b8e72f4ffae5081d653d0d174777e55
+    planApprovedHash: ae0c2a370f126c0728352cce2fee6c7e4b8e72f4ffae5081d653d0d174777e55
 prompts:
   - "Clean up these messy notes and pull out the actions"
   - "Draft a follow-up to this"
