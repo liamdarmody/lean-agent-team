@@ -42,9 +42,10 @@ And one routine, on Bea:
   anything you captured yesterday that is still messy, and stops without
   changing anything if there is nothing to tidy.
 
-It arrives switched on, so installing this team means one scheduled job starts
-running on your machine. Rundock says so on the install card before you agree,
-and you can turn it off or delete it from Routines afterwards. Note that the
+It arrives switched on, but it waits for you: before its first unattended run,
+open Routines and approve what it does with **Review and resume**. Rundock names
+the routine and its schedule on the install card before you agree, and you can
+turn it off or delete it from Routines afterwards. Note that the
 routine is a Rundock idea: the same agent file works in plain Claude Code,
 where the routine simply never runs.
 

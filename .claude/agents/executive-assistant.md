@@ -19,7 +19,7 @@ routines:
     runOn: local
     paused: false
     planHash: ae0c2a370f126c0728352cce2fee6c7e4b8e72f4ffae5081d653d0d174777e55
-    planApprovedHash: ae0c2a370f126c0728352cce2fee6c7e4b8e72f4ffae5081d653d0d174777e55
+    planApprovedHash: pending
 prompts:
   - "Clean up these messy notes and pull out the actions"
   - "Draft a follow-up to this"
