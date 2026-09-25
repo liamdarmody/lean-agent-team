@@ -54,18 +54,11 @@ you lose go to admin, not creation, so point your worst weekly time sink at
 Bea first. And the safety rule (agents draft, a human sends) is the one to keep
 no matter what else you change.
 
-## Install into Rundock
+## Two ways to use it
 
-Paste this repository's link into **Settings, Packages** in Rundock. Rundock
-finds the three agents, two skills and one routine, and offers to add them to your
-workspace. Nothing installs until you say yes. Once added, they are your
-files: edit them like anything else in your workspace.
+### Open it as a workspace
 
-The install brings the agents and skills. `CLAUDE.md`, `context/`, and
-`prompts/` are here for you to copy in by hand if you want the full setup
-described below, or clone the whole folder and open it as a workspace.
-
-## Use it as a whole workspace
+The whole setup, context files and prompts included. Best for a fresh start.
 
 1. Clone or download this folder.
 2. Open it in Rundock (or any coding agent that reads `.claude/`) as a
@@ -75,6 +68,30 @@ described below, or clone the whole folder and open it as a workspace.
    so the team is trained on your work, not a template.
 4. Get your first win (`prompts/first-win.md`). Turn one idea into a post, or
    hand the EA a messy note and get it back clean.
+
+### Add it to a workspace you already have
+
+The team beside what you already run in Rundock.
+
+1. In Rundock, open **Settings, Packages**.
+2. Paste this repository's link into **Add a package**.
+3. Rundock finds the three agents, two skills and one routine, and shows you
+   what it would add. Nothing installs until you say yes.
+
+If your workspace already has something at the same name, such as your own
+`chief-of-staff` agent, Rundock lists it as already there and keeps yours
+unless you choose to replace it. If you already have a lead agent under
+another name, it offers to put the team under yours rather than add a second
+lead. Once added, the agents and skills are your files: edit them like
+anything else in your workspace.
+
+This route brings the agents, the skills and the routine. `CLAUDE.md`,
+`context/` and `prompts/` stay here: copy them in by hand if you want the
+first-run interview and the context files the agents read first.
+
+Pasting the link installs the latest release. When a new release is tagged,
+Rundock offers it from the team's card on the Packages page, and it keeps
+anything you have edited.
 
 ## What is inside
 
