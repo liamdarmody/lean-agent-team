@@ -9,6 +9,8 @@ business. This is a few agents that fit you, not fifty you will never use,
 trained on your real work from the first session. Start small, add more only
 when a real need shows up.
 
+Made for [Rundock](https://github.com/liamdarmody/rundock): on Rundock 0.15.0 or later, add it from **Settings, Packages** with this repository's link. It also works in any coding agent that reads `.claude/`.
+
 ## What this is
 
 A folder of ordinary Claude Code agents and skills. Nothing here is a plugin or
