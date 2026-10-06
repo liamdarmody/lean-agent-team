@@ -1,7 +1,9 @@
 ---
-name: Draft a Post
+name: draft-a-post
 description: Turn a rough idea into a short post in your voice, ready to refine. Use when given a rough idea and a short post is wanted back.
 ---
+
+# Draft a Post
 
 Use this when I give you a rough idea and want a short post back, in my voice,
 ready to refine.

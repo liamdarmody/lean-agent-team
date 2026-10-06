@@ -1,7 +1,9 @@
 ---
-name: Set Up Your Context
+name: set-up-your-context
 description: Check the three context files the team reads (company, person, voice) and, for any that are missing or still a template, interview me and write them. Use at the start of a conversation when those files are missing or unfilled, or when I ask to set up or redo my context.
 ---
+
+# Set Up Your Context
 
 Use this to give the team what it needs to know about me and my business. Every
 agent reads `context/company.md`, `context/person.md` and `context/voice.md`

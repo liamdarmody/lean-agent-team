@@ -1,7 +1,9 @@
 ---
-name: Clean a Note
+name: clean-a-note
 description: Turn a messy note into a clean one with decisions, actions, and follow-ups. Use when given meeting scrawl, a transcript, or a brain dump to tidy.
 ---
+
+# Clean a Note
 
 Use this when I hand you a messy note: meeting scrawl, a voice-memo transcript,
 a brain dump. Give me back something short and usable.
