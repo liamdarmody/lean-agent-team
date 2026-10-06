@@ -34,6 +34,32 @@ a brain dump. Give me back something short and usable.
 - If I pasted the note into the chat, give the clean version back in the chat.
   Save a file only if I ask.
 
+## Example
+Input, a file called `call-with-priya.md`:
+
+```text
+call w priya fri. she wants the proposal thurs not mon. price stays at 4k,
+she'll check split payment w finance. i send the retail case study. someone
+needs to book a room for kickoff. she mentioned a jan workshop maybe??
+coffee machine broke again
+```
+
+Output, saved beside it as `call-with-priya-clean.md`:
+
+```markdown
+## Decisions
+- Price stays at 4k.
+
+## Actions
+- Send the proposal by Thursday. Owner: me.
+- Send the retail case study. Owner: me.
+- Check split payment with finance. Owner: Priya.
+- Book a room for the kickoff. Owner: [ADD: owner]
+
+## Follow-ups
+- Priya mentioned a possible January workshop. Nothing agreed.
+```
+
 ## Never
 - Never edit, overwrite, rename, or delete the original note.
 - Never invent a date, name, decision, or action. If it is not in the note, flag
