@@ -14,12 +14,12 @@ skills:
 routines:
   - name: Tidy yesterday's notes
     schedule: every day at 08:00
-    prompt: Look for notes captured yesterday that are still messy, and clean each one using the Clean a Note skill. If there are none, say so and stop without changing anything.
-    description: Runs Clean a Note over yesterday's captures, so scrawl does not accumulate through the week.
+    prompt: Look for notes captured yesterday that are still messy, and clean each one using the Clean a Note skill (`clean-a-note`). Save each clean version as a new file beside the original, named `<name>-clean.md`, and never change the original. Skip any file whose name already ends in `-clean.md`, and any note that already has a `-clean.md` file beside it. If there is nothing to clean, say so and stop without changing anything.
+    description: Runs Clean a Note over yesterday's captures and saves a clean copy beside each one, so scrawl does not accumulate through the week. Originals are never changed.
     enabled: true
     runOn: local
     paused: false
-    planHash: ae0c2a370f126c0728352cce2fee6c7e4b8e72f4ffae5081d653d0d174777e55
+    planHash: f88bb88afc6dd20bc16a303fbc440dfcaf4974ec43755a22e45713b2bf5c789c
     planApprovedHash: pending
 prompts:
   - "Clean up these messy notes and pull out the actions"

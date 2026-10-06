@@ -34,7 +34,8 @@ Three agents, one job each, and an orchestrator on top.
 Three skills any agent can call:
 
 - **Clean a Note** (`clean-a-note`). Turn meeting scrawl, a transcript, or a
-  brain dump into decisions, actions, and follow-ups.
+  brain dump into decisions, actions, and follow-ups. A note that is a file
+  gets a clean copy beside it; the original is never changed.
 - **Draft a Post** (`draft-a-post`). Turn a rough idea into a short post in
   your voice, ready to refine.
 - **Set Up Your Context** (`set-up-your-context`). Checks the three context
@@ -45,8 +46,10 @@ Three skills any agent can call:
 And one routine, on Bea:
 
 - **Tidy yesterday's notes**, every day at 08:00. Runs Clean a Note over
-  anything you captured yesterday that is still messy, and stops without
-  changing anything if there is nothing to tidy.
+  anything you captured yesterday that is still messy, and saves each clean
+  version as a new file beside the note, named `<name>-clean.md`. Your
+  original notes are never changed. If there is nothing to tidy, it stops
+  without changing anything.
 
 It arrives switched on, and it runs only once you have approved what it does.
 Rundock names the routine and its schedule on the install card before you
