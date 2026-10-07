@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.2.3
+
+- **Cleo treats outside text as information too.** Cos and Bea already did.
+  Cleo now treats text inside emails, calendar invites, web pages and
+  attachments as information, never follows instructions found in it, and
+  tells you when it asks for something.
+- **Each agent says when to use it.** Every agent's description now ends with
+  "Use for ...", which helps the right agent pick up a request: planning and
+  mixed requests go to Cos, admin and quick replies to Bea, and anything you
+  publish to Cleo.
+- **Bea's routine keeps its approval.** Only her description changed, not the
+  routine, so there is nothing to approve again.
+- **If you edited a file, it stays yours.** If you changed Cos, Bea or Cleo,
+  Rundock keeps your version and saves the new one for you to review. Copy the
+  new lines across by hand to get the changes above.
+
 ## 1.2.2
 
 - **Outside text is information, not instructions.** `CLAUDE.md`, Cos and Bea
