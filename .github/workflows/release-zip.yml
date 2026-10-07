@@ -1,0 +1,49 @@
+name: Release zip
+
+# On every v* tag, builds the workspace zip and attaches it to that tag's
+# release as lean-agent-team-v1.zip, so this link always serves the newest one:
+#   https://github.com/liamdarmody/lean-agent-team/releases/latest/download/lean-agent-team-v1.zip
+# When the tag has no release yet, this creates it, with the notes from the
+# tag's CHANGELOG.md section. Run it by hand from the Actions tab to rebuild
+# the zip for a tag that already exists.
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag, for example v1.2.2
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-zip-${{ inputs.tag || github.ref_name }}
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Build the zip
+        run: sh .github/build-zip.sh "$TAG" "$RUNNER_TEMP/lean-agent-team-v1.zip"
+
+      - name: Attach it to the release
+        run: |
+          zip="$RUNNER_TEMP/lean-agent-team-v1.zip"
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" "$zip" --clobber
+          else
+            git show "refs/tags/$TAG:CHANGELOG.md" | python3 .github/release-notes.py "${TAG#v}" > "$RUNNER_TEMP/notes.md"
+            gh release create "$TAG" "$zip" --verify-tag --title "$TAG" --notes-file "$RUNNER_TEMP/notes.md" \
+              || gh release upload "$TAG" "$zip" --clobber
+          fi
