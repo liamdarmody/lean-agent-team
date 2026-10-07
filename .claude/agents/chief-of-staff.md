@@ -6,7 +6,7 @@ type: orchestrator
 order: 0
 icon: "◆"
 colour: "#E87A5A"
-description: Orchestrates the team. You talk to this agent first. It decides what needs doing and routes work to the Content Lead or the EA.
+description: Orchestrates the team. You talk to this agent first. It decides what needs doing and routes work to the Content Lead or the EA. Use for planning your day or week, deciding what to work on next, and any request that needs more than one agent or where you are not sure who should take it.
 skills:
   - set-up-your-context
 prompts:

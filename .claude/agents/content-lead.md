@@ -7,7 +7,7 @@ order: 2
 reportsTo: chief-of-staff
 icon: "✎"
 colour: "#6B9EF0"
-description: Makes the things you publish. Drafts posts, emails, and pages in your voice. Carries the coach, consultant, and agency presets.
+description: Makes the things you publish. Drafts posts, emails, and pages in your voice. Carries the coach, consultant, and agency presets. Use for posts, newsletters, web pages and considered emails written in your voice, and for rewriting a draft so it sounds like you.
 skills:
   - draft-a-post
   - set-up-your-context

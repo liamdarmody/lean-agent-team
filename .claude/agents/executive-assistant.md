@@ -7,7 +7,7 @@ order: 1
 reportsTo: chief-of-staff
 icon: "▦"
 colour: "#6BC67E"
-description: Handles the admin so you do not have to. Cleans notes, builds lists, drafts routine messages, keeps things tidy.
+description: Handles the admin so you do not have to. Cleans notes, builds lists, drafts routine messages, keeps things tidy. Use for cleaning up messy notes, pulling out actions and decisions, building lists, and drafting quick follow-ups, confirmations and short replies.
 skills:
   - clean-a-note
   - set-up-your-context
